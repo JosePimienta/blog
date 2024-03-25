@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="http://localhost:5500/submit-form" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" name="titulo" id="titulo">
+        <br>
+        <label for="contenido">Contenido:</label>
+        <br>
+        <textarea name="contenido" id="contenido" rows="10" cols="50"></textarea>
+        <br>
+        <label for="fecha_publicacion">Fecha de Publicación:</label>
+        <input type="date" name="fecha_publicacion" id="fecha_publicacion">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="dataBase.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+</head>
+<body>
+    <h1>Formulario de Publicación</h1>
+    <form action="/submit-form" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <br>
+        <label for="contenido">Contenido:</label>
+        <br>
+        <textarea id="contenido" name="contenido" required></textarea>
+        <br>
+        <label for="fecha_publicacion">Fecha de Publicación:</label>
+        <input type="date" id="fecha_publicacion" name="fecha_publicacion" required>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="dataBase.js"></script>
+    <script src="verificar.js"></script>
+</body>
+</html>
